@@ -6,11 +6,7 @@ pipeline {
                 git 'https://github.com/AHizaoui/ImproveSoftwareSeleniumJava.git'
            }
        }
-       stage ('Install') {
-           steps {
-               sh 'mvn install'
-           }
-       }
+       
 
         stage ('Build') {
             steps {
