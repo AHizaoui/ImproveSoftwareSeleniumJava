@@ -20,7 +20,7 @@ pipeline {
     stage('Scan') {
       steps {
         withSonarQubeEnv(installationName: 'sonarqube') { 
-          bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+          bat './gradlew sonarqube'
         }
       }
     }
